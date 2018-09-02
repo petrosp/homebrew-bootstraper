@@ -5,10 +5,13 @@ class Shprofile < Formula
   sha256 "895ae9e6be4d589678b910c2e8bf4b1e4336a8d704741ea008b80fb126fe2510"
 
   def install
-    Pathname.new(ENV['HOME']).join('.shprofile/profiles').mkpath
     system 'mv','shprofile.sh','shprofile'
     system 'chmod','+x', 'shprofile'
     libexec.install 'shprofile'
+  end
+
+  def caveats
+    "You must create the shprofile folder with `mkdir -p ~/.shprofile/profiles`"
   end
 
   test do
