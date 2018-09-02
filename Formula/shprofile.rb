@@ -7,10 +7,11 @@ class Shprofile < Formula
   def install
     system 'mv','shprofile.sh','shprofile'
     system 'chmod','+x', 'shprofile'
-    bin.install_symlink 'shprofile'
+    bin.install 'shprofile'
   end
 
   def caveats
+    puts HOMEBREW_PREFIX
     "You must create the shprofile folder with `mkdir -p ~/.shprofile/profiles`"
   end
 
