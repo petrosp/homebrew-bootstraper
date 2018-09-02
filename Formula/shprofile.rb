@@ -2,7 +2,7 @@ class Shprofile < Formula
   desc "Manage several shell profiles and switch between them, but not only."
   homepage "https://github.com/abourdon/shprofile"
   url "https://github.com/abourdon/shprofile/archive/4.4.tar.gz"
-  sha256 "895ae9e6be4d589678b910c2e8bf4b1e4336a8d704741ea008b80fb126fe2510"
+  sha256 "2001193561c949d0cb8075ea6770f07feb6a0c1433e582a701c6f76cfe8eb421"
 
   def install
     system 'mv','shprofile.sh','shprofile'
