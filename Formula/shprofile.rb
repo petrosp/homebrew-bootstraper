@@ -6,7 +6,7 @@ class Shprofile < Formula
 
   def install
     # system 'mv','shprofile.sh','shprofile'
-    (bin/"shprofile.sh").mv(bin/"shprofile")
+    (bin/"shprofile.sh").rename(bin/"shprofile")
     # system 'chmod','+x', 'shprofile'
     bin.install 'shprofile'
   end
