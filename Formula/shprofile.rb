@@ -7,7 +7,7 @@ class Shprofile < Formula
   def install
     # system 'mv','shprofile.sh','shprofile'
     # system 'chmod','+x', 'shprofile'
-    share.install 'shprofile.sh', 'shprofile'
+    share.install 'shprofile.sh'
   end
 
   def caveats
