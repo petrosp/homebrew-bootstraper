@@ -7,7 +7,7 @@ class Shprofile < Formula
   def install
     system 'mv','shprofile.sh','shprofile'
     system 'chmod','+x', 'shprofile'
-    libexec.install 'shprofile'
+    bin.install_symlink 'shprofile'
   end
 
   def caveats
