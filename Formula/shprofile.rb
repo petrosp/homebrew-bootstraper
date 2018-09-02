@@ -5,7 +5,8 @@ class Shprofile < Formula
   sha256 "2001193561c949d0cb8075ea6770f07feb6a0c1433e582a701c6f76cfe8eb421"
 
   def install
-    system 'mv','shprofile.sh','shprofile'
+    # system 'mv','shprofile.sh','shprofile'
+    (bin/"shprofile.sh").mv(bin/"shprofile")
     # system 'chmod','+x', 'shprofile'
     bin.install 'shprofile'
   end
