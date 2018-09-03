@@ -12,7 +12,6 @@ class Shprofile < Formula
   end
 
   def caveats
-    puts HOMEBREW_PREFIX
     "You must create the shprofile folder with `mkdir -p ~/.shprofile/profiles`"
   end
 
